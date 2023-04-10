@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="../../../assets/img/agendamento.jpg" > 
+</ion-header>
+<ion-content  class=" md content-ltr hydrated " style="--offset-top:0px; --offset-bottom:0px;
+--ion-background-color: #bcf0ff;">
+  <ion-list>
+
+    <ion-list-header> Marque a consulta do seu pet </ion-list-header>
+    <ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-select aria-label="nome" placeholder="Escolha o seu pet" >
+            <ion-select-option >Frida</ion-select-option>
+            <ion-select-option >Marley</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-select aria-label="Especialidades" placeholder="Especialidades">
+            <ion-select-option >Cirurgia</ion-select-option>
+            <ion-select-option > Patologia</ion-select-option>
+            <ion-select-option >Fisioterapeuta</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+
+    <ion-list-header color="light">Data da consulta: </ion-list-header>
+    <ion-item>
+      <ion-datetime presentation="date" id="date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-button (click)="listpe()">Enviar</ion-button>
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>
+
+

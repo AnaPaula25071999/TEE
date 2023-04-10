@@ -1,0 +1,37 @@
+ion-toolbar {
+    --background: #ffecd1;
+  }
+  
+  ion-title {
+    --text-align: center;
+  }
+  ion-label {
+    --color: black;
+   
+  }
+  .agen, .hom, .sob{
+  
+    color: black;
+  }
+  .hom{
+    background-color:#83fafe;
+  }
+  .agen{
+    background-color: #9c8ffd;
+  }
+  .sob{
+    background-color: #ffb593;
+  }
+  
+  .hometop{
+    img {
+      width: 10% ;
+      border-radius: 70%;
+      position: static;
+      text-align: right;
+    }
+  }
+  
+  
+  
+  

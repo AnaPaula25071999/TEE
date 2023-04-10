@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="../../../assets/img/6.jpg" > 
+</ion-header>
+
+<ion-content _ngcontent-hvh-c143 class="md content-ltr hydrated" style="--offset-top:0px; --offset-bottom:0px; 
+    --ion-background-color: #ffec5f;">
+  <ion-list>
+
+    <ion-list-header>Nome: </ion-list-header>
+    <ion-item >
+      <ion-input name="nome" type="nome" placeholder="Digite seu nome"  required></ion-input>
+    </ion-item>
+
+    <ion-list-header>E-mail: </ion-list-header>
+    <ion-item >
+      <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
+    </ion-item>
+
+    <ion-list-header>Senha: </ion-list-header>
+    <ion-item >
+      <ion-input name="password" type="password" placeholder="Senha"  required></ion-input>
+    </ion-item>
+
+    <ion-list-header>Telefone: </ion-list-header>
+    <ion-item >
+      <ion-input name="telef" type="number" placeholder="Digite seu telefone de contato"  required></ion-input>
+    </ion-item>
+
+
+    <ion-item >
+      <ion-button size="large" color="secondary" (click)="login()" expand="block">Cadastre-se</ion-button>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

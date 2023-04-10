@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="../../../assets/img/7.jpg" > 
+</ion-header>
+<ion-content  class=" md content-ltr hydrated " style="--offset-top:0px; --offset-bottom:0px;
+--ion-background-color: #fec9eb;">>
+
+    <ion-list *ngFor="let consul of lista">
+      <ion-item>
+        <ion-label (click)="showdetails(consul)">
+          <h2>{{consul.nome}}</h2>
+          <p>DATA: {{consul.data}} - eSPECIALIDADE: {{consul.especi}} </p>
+          
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  
+  </ion-content>
+
+</ion-content>

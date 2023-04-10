@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="../../../assets/img/agendamento.jpg" > 
+</ion-header>
+
+<ion-content _ngcontent-hvh-c143 class="md content-ltr hydrated" style="--offset-top:0px; --offset-bottom:0px; 
+    --ion-background-color: #bcf0ff;">
+  <ion-list>
+    <h4>Antes de agendar por favor realize seu Login! </h4>
+
+    <ion-item >
+      <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
+    </ion-item>
+
+    <ion-item >
+      <ion-input name="password" type="password" placeholder="senha"  required></ion-input>
+    </ion-item>
+
+    <ion-item class="btlogin" >
+      <ion-button size="large" color="warning" (click)="agend()" expand="block">Login</ion-button>
+      <ion-button size="large" color="warning" (click)="cadusu()" expand="block">Cadastre-se</ion-button>
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>
