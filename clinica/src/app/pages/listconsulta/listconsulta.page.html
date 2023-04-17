@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="lpet()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="../../../assets/img/7.jpg" > 
+</ion-header>
+
+<ion-content  class=" md content-ltr hydrated " style="--offset-top:0px; --offset-bottom:0px;
+--ion-background-color: #fec9eb;">
+
+  <ion-list *ngFor="let consul of lista">
+    <ion-item>
+      <ion-label (click)="showdetails(consul)">
+        <h2>{{consul.nome}}</h2>
+        <p>HORA: {{consul.hora}} - DATA: {{consul.data}} </p>
+        <p>ESPECIALIDADE: {{consul.especi}} </p>
+      </ion-label>
+      <ion-fab-button horizontal="center">
+        <ion-icon  name="trash-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="start" style="padding-top: 30px;"  >
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-button (click)="cons()">
+        Agende uma consulta
+      </ion-button>
+      <ion-button (click)="lpet()">
+        Meus gatinhos
+      </ion-button>
+    </ion-fab-list>
+
+  </ion-fab>
+
+</ion-content>

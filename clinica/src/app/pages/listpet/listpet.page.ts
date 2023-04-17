@@ -13,17 +13,35 @@ export class ListpetPage implements OnInit {
 
   ngOnInit() {
   }
+  agend(){
+    this.nav.navigateBack('consulta');
+  }  
   back(){
     this.nav.navigateBack('home');
   }  
+  cad(){
+    this.nav.navigateBack('cadastro');
+  }  
+  sobre(){
+    this.nav.navigateBack('servico');
+  }  
+  lpet(){
+    this.nav.navigateBack('listpet');
+  }  
+  cpet(){
+    this.nav.navigateBack('cadpet');
+  }  
+  cons(){
+    this.nav.navigateBack('listconsulta');
+  }  
 
   lista = [
-    {nome: 'ana', data: '25/09/2023', especi:'Patologia'},
-
+    {nome: 'Frida', idade: '2', raca:'Siamês'},
+    {nome: 'Marley', idade: '7', raca:'SRD'}
   ];
 
-  showdetails(consul: any){
-    console.log(consul);
+  showdetails(pet: any){
+    console.log(pet);
     
   }
 

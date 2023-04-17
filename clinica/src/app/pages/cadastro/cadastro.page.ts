@@ -24,5 +24,15 @@ export class CadastroPage implements OnInit {
   back(){
     this.nav.navigateBack('home');
   }  
+  cad(){
+    this.nav.navigateBack('cadastro');
+  }  
+  sobre(){
+    this.nav.navigateBack('servico');
+  }  
+  lpet(){
+    this.nav.navigateBack('listpet');
+  }  
+
   
 }

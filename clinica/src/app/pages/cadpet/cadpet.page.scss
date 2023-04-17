@@ -16,6 +16,20 @@ ion-label {
   .sob{
     background-color: #ffb593;
   }
+  .formcon{
+    justify-content: center;
+    display: flex!important;
+    align-items: center!important;
+  }
+
+  ion-card{
+    --ion-background-color: #FEC9EB!important;
+    border-radius: 20px;
+  }
+  ion-item{
+    padding: 15px;
+  }
+
   
 
   

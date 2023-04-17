@@ -1,29 +1,46 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{titulo}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
+  <img src="../../../assets/img/meuspet.jpg" > 
 </ion-header>
 
-<ion-content class="ion-padding">
 
-  <ion-list *ngFor="let pessoa of lista">
-    <ion-item>
-      <ion-label (click)="showdetails(pessoa)">
-        <h2>{{pessoa.nome}}</h2>
-        <p>{{pessoa.email}} - {{pessoa.idade}} anos</p>
-        
-      </ion-label>
-    </ion-item>
+<ion-content _ngcontent-hvh-c143 class="md content-ltr hydrated" style="--offset-top:0px; --offset-bottom:0px; 
+    --ion-background-color:  #7CFF8F;">
+  <ion-list>
+    <h4>Para acessar essa funcionalidade por favor realize seu Login! </h4>
+
+    <ion-card style="padding: 30px;">
+
+      <ion-row class="log" >
+        <ion-item >
+          <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
+        </ion-item>
+      </ion-row>
+
+      <ion-row class="log">
+        <ion-item >
+          <ion-input name="password" type="password" placeholder="senha"  required></ion-input>
+        </ion-item>
+      </ion-row>
+      
+      <ion-row class="log">
+        <ion-item  class="btlogin">
+          <ion-button size="larger" color="warning" (click)="lpet()" expand="block">Login</ion-button>
+        </ion-item>
+      </ion-row>
+
+      <ion-text >
+        <ion-button fill="clear" (click)="cadusu()" expand="block">Cadastre-se</ion-button>
+      </ion-text>
+
+    </ion-card>
+
   </ion-list>
 
 </ion-content>
-
-<ion-footer>
-  <ion-grid>
-    <ion-row>
-      <ion-col><ion-button expand="block">Cancelar</ion-button></ion-col>
-      <ion-col><ion-button expand="block">Confirmar</ion-button></ion-col>
-    </ion-row>
-  </ion-grid>
-  {{footer}}
-</ion-footer>

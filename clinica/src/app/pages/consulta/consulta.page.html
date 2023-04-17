@@ -12,36 +12,44 @@
 --ion-background-color: #bcf0ff;">
   <ion-list>
 
-    <ion-list-header> Marque a consulta do seu pet </ion-list-header>
-    <ion-item>
-      <ion-list>
-        <ion-item>
-          <ion-select aria-label="nome" placeholder="Escolha o seu pet" >
-            <ion-select-option >Frida</ion-select-option>
-            <ion-select-option >Marley</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-item>
-          <ion-select aria-label="Especialidades" placeholder="Especialidades">
-            <ion-select-option >Cirurgia</ion-select-option>
-            <ion-select-option > Patologia</ion-select-option>
-            <ion-select-option >Fisioterapeuta</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-list>
-    </ion-item>
+    <ion-card style="padding: 30px;">
 
-    <ion-list-header color="light">Data da consulta: </ion-list-header>
-    <ion-item>
-      <ion-datetime presentation="date" id="date"></ion-datetime>
-    </ion-item>
+      <ion-list-header color="light"> Marque a consulta do seu pet </ion-list-header>
+      <ion-item class="formcon">
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="nome" placeholder="Escolha o seu pet" >
+              <ion-select-option >Frida</ion-select-option>
+              <ion-select-option >Marley</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
 
-    <ion-item>
-      <ion-button (click)="listpe()">Enviar</ion-button>
-    </ion-item>
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="Especialidades" placeholder="Especialidades">
+              <ion-select-option >Cardiologia</ion-select-option>
+              <ion-select-option >Cirurgia</ion-select-option>
+              <ion-select-option >Fisioterapia</ion-select-option>
+              <ion-select-option >Oncologia</ion-select-option>
+              <ion-select-option >Nefrologia</ion-select-option>
+              <ion-select-option >Neurologia</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
 
+      </ion-item>
+
+      <ion-list-header color="light">Data da consulta: </ion-list-header>
+      <ion-item  style="padding: 30px;">
+        <ion-datetime></ion-datetime>
+      </ion-item>
+
+      <ion-item  style="padding: 15px;">
+        <ion-button size="larger" (click)="lcons()">Enviar</ion-button>
+      </ion-item>
+
+    </ion-card>
 
   </ion-list>
 </ion-content>

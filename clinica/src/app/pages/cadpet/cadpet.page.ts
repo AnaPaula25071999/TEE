@@ -20,13 +20,10 @@ export class CadpetPage implements OnInit {
   ngOnInit() {
   }
 
-  back(){
-    this.nav.navigateBack('home');
-  }
-
-  cad(){
+  lpet(){
     this.nav.navigateBack('listpet');
-  }
+  }  
+  
 
   send(){
     console.log(this.nomecat);

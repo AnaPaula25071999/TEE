@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -7,24 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  lista = [
-    {nome: 'ana', email: 'ana@email.com', idade: 25},
-    {nome: 'paula', email: 'paula@email.com', idade: 35},
+ constructor(
+    private nav: NavController
+  ) { }
 
-  ];
+  ngOnInit(): void {
 
-  titulo = "Usuários";
-
-  footer = "Ana Paula castro"
-
-  constructor() { }
-
-  ngOnInit() {
   }
 
-  showdetails(pessoa: any){
-    console.log(pessoa);
-    
-  }
-
+  agend(){
+    this.nav.navigateBack('consulta');
+  }  
+  cadusu(){
+    this.nav.navigateBack('usuario');
+  }  
+  back(){
+    this.nav.navigateBack('home');
+  }  
+  cad(){
+    this.nav.navigateBack('cadastro');
+  }  
+  sobre(){
+    this.nav.navigateBack('servico');
+  }  
+  lpet(){
+    this.nav.navigateBack('listpet');
+  }  
+  
 }

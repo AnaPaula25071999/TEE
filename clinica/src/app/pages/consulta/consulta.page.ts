@@ -20,5 +20,8 @@ import { NavController } from '@ionic/angular';
     listpe(){
       this.nav.navigateBack('listpet');
     } 
+    lcons(){
+      this.nav.navigateBack('listconsulta');
+    }  
 
   }

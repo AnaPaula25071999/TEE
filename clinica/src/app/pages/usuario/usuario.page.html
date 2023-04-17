@@ -13,30 +13,34 @@
     --ion-background-color: #ffec5f;">
   <ion-list>
 
-    <ion-list-header>Nome: </ion-list-header>
-    <ion-item >
-      <ion-input name="nome" type="nome" placeholder="Digite seu nome"  required></ion-input>
-    </ion-item>
+    <ion-card style="padding: 30px;">
+    
+      <ion-list-header color="light">Nome: </ion-list-header>
+      <ion-item >
+        <ion-input name="nome" type="nome" placeholder="Digite seu nome"  required></ion-input>
+      </ion-item>
+  
+      <ion-list-header color="light">E-mail: </ion-list-header>
+      <ion-item >
+        <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
+      </ion-item>
+  
+      <ion-list-header color="light">Senha: </ion-list-header>
+      <ion-item >
+        <ion-input name="password" type="password" placeholder="Senha"  required></ion-input>
+      </ion-item>
+  
+      <ion-list-header color="light">Telefone: </ion-list-header>
+      <ion-item >
+        <ion-input name="telef" type="number" placeholder="Digite seu telefone de contato"  required></ion-input>
+      </ion-item>
 
-    <ion-list-header>E-mail: </ion-list-header>
-    <ion-item >
-      <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
-    </ion-item>
-
-    <ion-list-header>Senha: </ion-list-header>
-    <ion-item >
-      <ion-input name="password" type="password" placeholder="Senha"  required></ion-input>
-    </ion-item>
-
-    <ion-list-header>Telefone: </ion-list-header>
-    <ion-item >
-      <ion-input name="telef" type="number" placeholder="Digite seu telefone de contato"  required></ion-input>
-    </ion-item>
-
-
-    <ion-item >
-      <ion-button size="large" color="secondary" (click)="login()" expand="block">Cadastre-se</ion-button>
-    </ion-item>
+  
+      <ion-item style="padding: 20px;">
+        <ion-button size="default" color="dark" (click)="login()" expand="block">Pronto</ion-button>
+      </ion-item>
+    
+    </ion-card>
 
   </ion-list>
 

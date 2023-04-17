@@ -1,9 +1,43 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>servico</ion-title>
-  </ion-toolbar>
+  <img src="../../../assets/img/servico1.jpg" > 
 </ion-header>
 
-<ion-content>
-
+<ion-content  ngcontent-hvh-c143 class="md content-ltr hydrated" style="--offset-top:0px; --offset-bottom:0px;
+--ion-background-color:#66E8FE!important;">
+  <img src="/../../assets/img/servico3.jpg">
 </ion-content>
+
+<ion-footer style="height: 50px;">
+  <ion-tabs>
+    <ion-tab-bar slot="start">
+      <ion-tab-button class="hom" (click)="back()">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>
+          Home
+        </ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="agen" (click)="cad()">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <ion-label>
+          Agendamentos
+        </ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="lpet" (click)="lpet()">
+        <ion-icon name="logo-octocat"></ion-icon>
+        <ion-label>
+          Meus pets
+        </ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="ser" (click)="sobre()">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        <ion-label>
+          Serviços
+        </ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

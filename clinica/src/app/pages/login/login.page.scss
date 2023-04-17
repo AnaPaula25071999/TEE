@@ -1,0 +1,54 @@
+h4 {
+    color: #130e69;
+    height: 20%;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+    ion-toolbar {
+      --background: #ffecd1;
+    }
+    
+    ion-title {
+      --text-align: center;
+    }
+    ion-label {
+      --color: black;
+     
+    }
+    .hom{
+      background-color:#83fafe;
+    }
+    .agen{
+      background-color: #9c8ffd;
+    }
+    .lpet{
+      background-color: #ffb593;
+    }
+    .ser{
+      background-color: #F76F14;
+    }
+    .agen, .hom, .lpet, .ser{
+    
+      color: black;
+    }
+    
+    .btlogin{
+      justify-content: center;
+      display: flex!important;
+      align-items: center!important;
+    }
+    .log{
+      justify-content: center;
+      display: flex!important;
+      align-items: center!important;
+    }
+  
+    ion-card{
+      --ion-background-color: #FEC9EB!important;
+      border-radius: 20px;
+    }
+  
+    

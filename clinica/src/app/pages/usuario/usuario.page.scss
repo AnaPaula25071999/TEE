@@ -32,7 +32,14 @@ h4 {
     .sob{
       background-color: #ffb593;
     }
-    
+    ion-card{
+      --ion-background-color: #FEC9EB!important;
+      border-radius: 20px;
+    }
+    ion-item{
+      padding: 10px;
+    }
+  
   
     
     

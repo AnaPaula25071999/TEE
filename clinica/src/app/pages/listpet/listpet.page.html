@@ -6,21 +6,41 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <img src="../../../assets/img/7.jpg" > 
+  <img src="../../../assets/img/meuspet.jpg" > 
 </ion-header>
-<ion-content  class=" md content-ltr hydrated " style="--offset-top:0px; --offset-bottom:0px;
---ion-background-color: #fec9eb;">>
 
-    <ion-list *ngFor="let consul of lista">
+<ion-content  class=" md content-ltr hydrated " style="--offset-top:0px; --offset-bottom:0px;
+--ion-background-color: #7CFF8F;">
+
+    <ion-list *ngFor="let pet of lista">
       <ion-item>
-        <ion-label (click)="showdetails(consul)">
-          <h2>{{consul.nome}}</h2>
-          <p>DATA: {{consul.data}} - eSPECIALIDADE: {{consul.especi}} </p>
-          
+        <ion-label (click)="showdetails(pet)">
+          <h2>{{pet.nome}}</h2>
+          <p>Idade: {{pet.idade}} -  Raça: {{pet.raca}} </p>
         </ion-label>
+        <ion-fab-button horizontal="center">
+          <ion-icon  name="trash-outline"></ion-icon>
+        </ion-fab-button>
       </ion-item>
     </ion-list>
-  
-  </ion-content>
+
+    <ion-fab vertical="bottom" horizontal="start" >
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+
+        <ion-button (click)="cpet()">
+          Adicione seu pet
+        </ion-button>
+
+        <ion-button (click)="cons()">
+          Meus agendamentos
+        </ion-button>
+
+      </ion-fab-list>
+  </ion-fab>
 
 </ion-content>
+
+

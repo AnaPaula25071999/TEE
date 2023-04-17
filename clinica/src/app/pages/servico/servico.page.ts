@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-servico',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicoPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private nav: NavController
+
+  ) { }
 
   ngOnInit() {
+
+    
   }
 
+  agend(){
+    this.nav.navigateBack('consulta');
+  }  
+  back(){
+    this.nav.navigateBack('home');
+  }  
+  cad(){
+    this.nav.navigateBack('cadastro');
+  }  
+  sobre(){
+    this.nav.navigateBack('servico');
+  }  
+  lpet(){
+    this.nav.navigateBack('listpet');
+  }  
+  
 }

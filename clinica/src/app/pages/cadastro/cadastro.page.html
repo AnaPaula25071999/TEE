@@ -12,21 +12,33 @@
 <ion-content _ngcontent-hvh-c143 class="md content-ltr hydrated" style="--offset-top:0px; --offset-bottom:0px; 
     --ion-background-color: #bcf0ff;">
   <ion-list>
-    <h4>Antes de agendar por favor realize seu Login! </h4>
+    <h4>Para acessar essa funcionalidade por favor realize seu Login!</h4>
 
-    <ion-item >
-      <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
-    </ion-item>
+    <ion-card style="padding: 30px;">
 
-    <ion-item >
-      <ion-input name="password" type="password" placeholder="senha"  required></ion-input>
-    </ion-item>
+      <ion-row class="log" >
+        <ion-item >
+          <ion-input name="email" type="email" placeholder="exemplo@email.com"  required></ion-input>
+        </ion-item>
+      </ion-row>
 
-    <ion-item class="btlogin" >
-      <ion-button size="large" color="warning" (click)="agend()" expand="block">Login</ion-button>
-      <ion-button size="large" color="warning" (click)="cadusu()" expand="block">Cadastre-se</ion-button>
-    </ion-item>
+      <ion-row class="log">
+        <ion-item >
+          <ion-input name="password" type="password" placeholder="senha"  required></ion-input>
+        </ion-item>
+      </ion-row>
+      
+      <ion-row class="log">
+        <ion-item  class="btlogin">
+          <ion-button size="larger" color="warning" (click)="agend()" expand="block">Login</ion-button>
+        </ion-item>
+      </ion-row>
 
+      <ion-text >
+        <ion-button fill="clear" (click)="cadusu()" expand="block">Cadastre-se</ion-button>
+      </ion-text>
+
+    </ion-card>
 
   </ion-list>
 

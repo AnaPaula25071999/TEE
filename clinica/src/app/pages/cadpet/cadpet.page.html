@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button (click)="back()">
+      <ion-button (click)="lpet()">
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -12,41 +12,46 @@
 <ion-content class="ion-padding" style="--ion-background-color: #83fafe;">
   <ion-list>
 
-    <ion-list-header> Preencha todos os campos do formulário 
+    <ion-card style="padding: 30px;">
+
+      <ion-list-header style="padding: 15px;"> Preencha todos os campos do formulário </ion-list-header>
+
+      <ion-list-header color="light"> Nome </ion-list-header>
+
+      <ion-item >
+        <ion-input [(ngModel)]="nomecat" placeholder="Nome do seu pet"></ion-input> 
+      </ion-item>
+
+      <ion-list-header color="light"> Idade </ion-list-header>
+
+      <ion-item>
+        <ion-input [(ngModel)]="idade"  placeholder="Idade"></ion-input> 
+      </ion-item>
+
+      <ion-list-header color="light"> Raca </ion-list-header>
+
+      <ion-item>
+        <ion-input [(ngModel)]="raca" placeholder="Raça"></ion-input> 
+      </ion-item>
+
+      <ion-list-header color="light" >Gênero</ion-list-header>
       
-    </ion-list-header>
-    <ion-list-header>Nome: </ion-list-header>
-    <ion-item>
-      <ion-input [(ngModel)]="nomecat" placeholder="Nome do seu pet"></ion-input> 
-    </ion-item>
-
-    <ion-list-header>Idade: </ion-list-header>
-    <ion-item>
-      <ion-datetime [(ngModel)]="idade" presentation="date" id="datetime"></ion-datetime>
-    </ion-item>
-
-    <ion-item>
-      <ion-list-header >Raça</ion-list-header>
-      <ion-input [(ngModel)]="raca"></ion-input> 
-    </ion-item>
-
-    <ion-list-header >Gênero</ion-list-header>
-    <ion-radio-group [(ngModel)]="generocat">
-      <ion-item>
-        <ion-label>Feminino</ion-label>
-        <ion-radio slot="end" value="feminino"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>Masculino</ion-label>
-        <ion-radio slot="end" value="masculino"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
+      <ion-radio-group [(ngModel)]="generocat">
+        <ion-item >
+          <ion-label>Feminino</ion-label>
+          <ion-radio slot="end" value="feminino"></ion-radio>
+        </ion-item>
     
-    <ion-item>
-      <ion-button size="large" color="dark"(click)="send()" (click)="cad()">Enviar</ion-button>
-    </ion-item>
-
+        <ion-item>
+          <ion-label>Masculino</ion-label>
+          <ion-radio slot="end" value="masculino"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      
+      <ion-item>
+        <ion-button size="large" color="dark"(click)="send()" (click)="lpet()">Enviar</ion-button>
+      </ion-item>
+  </ion-card>
 
   </ion-list>
   

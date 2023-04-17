@@ -6,20 +6,34 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-//controlador junção da view e model para exibição na página
-constructor(
-  private nav: NavController
-) { }
-ngOnInit(): void {
 
-}
-home(){
-  this.nav.navigateBack('home');
-}  
-cad(){
-  this.nav.navigateBack('cadastro');
-}  
-sobre(){
-  this.nav.navigateBack('sobre');
-}  
+  constructor(
+    private nav: NavController
+  ) { }
+  
+  ngOnInit(): void {
+  }
+
+  agend(){
+    this.nav.navigateBack('consulta');
+  }  
+  back(){
+    this.nav.navigateBack('home');
+  }  
+  cad(){
+    this.nav.navigateBack('cadastro');
+  }  
+  sobre(){
+    this.nav.navigateBack('servico');
+  }  
+  lpet(){
+    this.nav.navigateBack('listpet');
+  }   
+  cadusu(){
+    this.nav.navigateBack('usuario');
+  }  
+  logpet(){
+    this.nav.navigateBack('login');
+  }  
+
 }

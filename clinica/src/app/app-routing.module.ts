@@ -37,11 +37,11 @@ const routes: Routes = [
   },
   {
     path: 'listpet',
-    loadChildren: () => import('./listpet/listpet.module').then( m => m.ListpetPageModule)
+    loadChildren: () => import('./pages/listpet/listpet.module').then( m => m.ListpetPageModule)
   },
   {
-    path: 'sobre',
-    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+    path: 'listconsulta',
+    loadChildren: () => import('./pages/listconsulta/listconsulta.module').then( m => m.ListconsultaPageModule)
   },
 ];
 
